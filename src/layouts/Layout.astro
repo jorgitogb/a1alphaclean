@@ -1,0 +1,37 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "A1 Alpha Clean - Professional Cleaning Services in Las Vegas. Your trusted Vegas cleaners for residential and commercial cleaning." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content={description}>
+  <meta name="keywords" content="cleaning services, Las Vegas cleaners, professional cleaning, residential cleaning, commercial cleaning, A1 Alpha Clean">
+  <meta name="author" content="A1 Alpha Clean">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://a1alphaclean.com">
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:site_name" content="A1 Alpha Clean">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <title>{title}</title>
+  
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="/src/styles/global.css">
+</head>
+<body>
+  <slot />
+</body>
+</html>

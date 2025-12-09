@@ -1,16 +1,655 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="A1 Alpha Clean - Professional Cleaning Services in Las Vegas">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-background"></div>
+    <div class="container">
+      <div class="hero-content fade-in-up">
+        <div class="hero-badge">✨ Your Trusted Vegas Cleaners</div>
+        <h1 class="hero-title">
+          Sparkling Clean Spaces,<br>
+          <span class="text-gradient">Every Single Time</span>
+        </h1>
+        <p class="hero-description">
+          Professional residential and commercial cleaning services in Las Vegas. 
+          We bring the shine to your home or business with attention to detail and exceptional care.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+          <a href="#services" class="btn btn-secondary">Our Services</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-decoration float">
+      <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" fill="url(#sparkle-gradient)" opacity="0.6"/>
+        <defs>
+          <linearGradient id="sparkle-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:hsl(200, 100%, 45%);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:hsl(180, 70%, 50%);stop-opacity:1" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="mb-md">Our <span class="text-gradient">Services</span></h2>
+        <p class="section-subtitle">Comprehensive cleaning solutions tailored to your needs</p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card service-card">
+          <div class="service-icon">🏠</div>
+          <h3>Residential Cleaning</h3>
+          <p>Keep your home spotless with our thorough residential cleaning services. From regular maintenance to deep cleaning, we've got you covered.</p>
+          <ul class="service-features">
+            <li>✓ Regular house cleaning</li>
+            <li>✓ Deep cleaning</li>
+            <li>✓ Move-in/move-out cleaning</li>
+          </ul>
+        </div>
+
+        <div class="card service-card">
+          <div class="service-icon">🏢</div>
+          <h3>Commercial Cleaning</h3>
+          <p>Professional cleaning for offices, retail spaces, and commercial properties. Maintain a pristine environment for your business.</p>
+          <ul class="service-features">
+            <li>✓ Office cleaning</li>
+            <li>✓ Retail space cleaning</li>
+            <li>✓ Post-construction cleanup</li>
+          </ul>
+        </div>
+
+        <div class="card service-card">
+          <div class="service-icon">✨</div>
+          <h3>Specialized Services</h3>
+          <p>Expert cleaning for specific needs including carpet cleaning, window washing, and more specialized cleaning tasks.</p>
+          <ul class="service-features">
+            <li>✓ Carpet & upholstery cleaning</li>
+            <li>✓ Window cleaning</li>
+            <li>✓ Custom cleaning plans</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="section why-section">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-content">
+          <h2 class="mb-lg">Why Choose <span class="text-gradient">A1 Alpha Clean?</span></h2>
+          <div class="why-features">
+            <div class="why-feature">
+              <div class="why-feature-icon">🌟</div>
+              <div>
+                <h3>Professional Excellence</h3>
+                <p>Trained and experienced cleaning professionals dedicated to delivering outstanding results every time.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature-icon">💎</div>
+              <div>
+                <h3>Attention to Detail</h3>
+                <p>We don't just clean—we perfect. Every corner, every surface gets the care it deserves.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature-icon">🛡️</div>
+              <div>
+                <h3>Trusted & Reliable</h3>
+                <p>Fully insured and background-checked team members you can trust in your home or business.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature-icon">🌿</div>
+              <div>
+                <h3>Eco-Friendly Products</h3>
+                <p>We use environmentally safe cleaning products that are tough on dirt but gentle on your space.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-image">
+          <div class="glass-card">
+            <div class="stats-grid">
+              <div class="stat">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Happy Clients</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">5★</div>
+                <div class="stat-label">Rating</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Support</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2 class="mb-lg">Get Your <span class="text-gradient">Free Quote</span></h2>
+          <p class="mb-xl">Ready to experience the A1 Alpha Clean difference? Contact us today for a free, no-obligation quote.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-method-icon">📞</div>
+              <div>
+                <h4>Call Us</h4>
+                <a href="tel:+17025551234" class="contact-link">(702) 555-1234</a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-method-icon">📧</div>
+              <div>
+                <h4>Email Us</h4>
+                <a href="mailto:info@a1alphaclean.com" class="contact-link">info@a1alphaclean.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-method-icon">📍</div>
+              <div>
+                <h4>Service Area</h4>
+                <p>Las Vegas, NV & Surrounding Areas</p>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-method-icon">📱</div>
+              <div>
+                <h4>Follow Us</h4>
+                <a href="https://www.instagram.com/a1alphaclean/" target="_blank" rel="noopener noreferrer" class="contact-link">@a1alphaclean</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form class="contact-form glass" id="contact-form">
+            <h3 class="mb-md">Request a Quote</h3>
+            
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(702) 555-1234">
+            </div>
+            
+            <div class="form-group">
+              <label for="service">Service Type</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="residential">Residential Cleaning</option>
+                <option value="commercial">Commercial Cleaning</option>
+                <option value="deep">Deep Cleaning</option>
+                <option value="move">Move-in/Move-out</option>
+                <option value="specialized">Specialized Services</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your cleaning needs..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>A1 Alpha Clean</h3>
+          <p>Your trusted Vegas cleaners 💫</p>
+        </div>
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+          <a href="https://www.instagram.com/a1alphaclean/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; {new Date().getFullYear()} A1 Alpha Clean. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: var(--space-2xl) 0;
+  }
+
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-hero);
+    z-index: -1;
+  }
+
+  .hero-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: var(--color-white);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-lg);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--space-lg);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    margin-bottom: var(--space-lg);
+    line-height: 1.1;
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .hero-title .text-gradient {
+    color: rgba(255, 255, 255, 0.95);
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    text-shadow: 0 1px 10px rgba(255, 255, 255, 0.2);
+    font-weight: 900;
+  }
+
+  .hero-description {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-xl);
+    opacity: 0.95;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-decoration {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  /* Section Header */
+  .section-header {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .section-subtitle {
+    font-size: var(--text-lg);
+    color: var(--color-gray-700);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Service Cards */
+  .service-card {
+    text-align: center;
+  }
+
+  .service-icon {
+    font-size: 4rem;
+    margin-bottom: var(--space-md);
+  }
+
+  .service-features {
+    list-style: none;
+    margin-top: var(--space-lg);
+    text-align: left;
+  }
+
+  .service-features li {
+    padding: var(--space-xs) 0;
+    color: var(--color-gray-700);
+  }
+
+  /* Why Section */
+  .why-section {
+    background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--color-primary-light) 100%);
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+  }
+
+  .why-features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .why-feature {
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+  }
+
+  .why-feature-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+  }
+
+  .why-feature h3 {
+    margin-bottom: var(--space-xs);
+    font-size: var(--text-xl);
+  }
+
+  .why-feature p {
+    margin: 0;
+    color: var(--color-gray-700);
+  }
+
+  .glass-card {
+    background: var(--gradient-glass);
+    backdrop-filter: blur(20px);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-2xl);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: var(--text-4xl);
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-xs);
+  }
+
+  .stat-label {
+    font-size: var(--text-sm);
+    color: var(--color-gray-700);
+    font-weight: 600;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    background: var(--color-white);
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+  }
+
+  .contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .contact-method {
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+  }
+
+  .contact-method-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+
+  .contact-method h4 {
+    margin-bottom: var(--space-xs);
+    font-size: var(--text-lg);
+  }
+
+  .contact-method p {
+    margin: 0;
+    color: var(--color-gray-700);
+  }
+
+  .contact-link {
+    font-weight: 600;
+    font-size: var(--text-lg);
+  }
+
+  /* Contact Form */
+  .contact-form {
+    padding: var(--space-2xl);
+    border-radius: var(--radius-2xl);
+  }
+
+  .form-group {
+    margin-bottom: var(--space-lg);
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: var(--space-xs);
+    font-weight: 600;
+    color: var(--color-gray-900);
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: var(--space-md);
+    border: 2px solid var(--color-gray-200);
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    transition: border-color var(--transition-base);
+    background: var(--color-white);
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+  }
+
+  .btn-full {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    background: var(--color-gray-900);
+    color: var(--color-white);
+    padding: var(--space-2xl) 0 var(--space-lg);
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .footer-brand h3 {
+    color: var(--color-white);
+    margin-bottom: var(--space-xs);
+  }
+
+  .footer-brand p {
+    margin: 0;
+    opacity: 0.8;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: var(--space-lg);
+  }
+
+  .footer-links a {
+    color: var(--color-white);
+    opacity: 0.8;
+    transition: opacity var(--transition-base);
+  }
+
+  .footer-links a:hover {
+    opacity: 1;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    opacity: 0.6;
+    font-size: var(--text-sm);
+  }
+
+  .footer-bottom p {
+    margin: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero {
+      min-height: 80vh;
+    }
+
+    .hero-decoration {
+      display: none;
+    }
+
+    .why-grid,
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-2xl);
+    }
+
+    .footer-content {
+      flex-direction: column;
+      gap: var(--space-lg);
+      text-align: center;
+    }
+
+    .footer-links {
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+  }
+</style>
+
+<script>
+  // Form submission handler
+  const form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(form as HTMLFormElement);
+      const data = Object.fromEntries(formData);
+      
+      // Here you would typically send the data to a server
+      // For now, we'll just show an alert
+      alert('Thank you for your message! We will contact you soon.');
+      
+      // Reset form
+      (form as HTMLFormElement).reset();
+    });
+  }
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector((this as HTMLAnchorElement).getAttribute('href')!);
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+</script>
