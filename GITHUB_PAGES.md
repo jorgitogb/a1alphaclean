@@ -87,6 +87,17 @@ git push -u origin main
 
 **Replace `username` with your GitHub username!**
 
+## Step 3.5: Disable Jekyll (CRITICAL)
+
+GitHub Pages uses Jekyll by default, which will cause errors with Astro projects. A `.nojekyll` file has been created in your project root to disable this.
+
+**Verify the file exists:**
+- Check that `.nojekyll` file exists in your project root
+- This file should be empty (it's just a marker file)
+- It will be committed with your code
+
+If you see errors like "Invalid YAML front matter in .astro files", this means Jekyll is still trying to process your files.
+
 ## Step 4: Enable GitHub Pages
 
 1. Go to your repository on GitHub
@@ -171,6 +182,29 @@ git push
 The GitHub Actions workflow will automatically rebuild and deploy your site.
 
 ## Troubleshooting
+
+### Jekyll Error: "Invalid YAML front matter"
+
+**Error message:**
+```
+ERROR: YOUR SITE COULD NOT BE BUILT:
+Invalid YAML front matter in /github/workspace/src/pages/index.astro
+```
+
+**Solution:**
+1. Ensure `.nojekyll` file exists in your project root (already created)
+2. Make sure you've committed and pushed the `.nojekyll` file:
+   ```bash
+   git add .nojekyll
+   git commit -m "Add .nojekyll to disable Jekyll"
+   git push
+   ```
+3. In GitHub repository settings:
+   - Go to **Settings** → **Pages**
+   - Under **Source**, ensure it's set to **GitHub Actions** (NOT "Deploy from a branch")
+4. Re-run the failed workflow from the Actions tab
+
+**Why this happens:** GitHub Pages defaults to Jekyll builds. The `.nojekyll` file tells GitHub to skip Jekyll processing and use your custom workflow instead.
 
 ### Workflow Fails
 
