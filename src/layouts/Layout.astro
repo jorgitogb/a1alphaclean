@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 interface Props {
   title: string;
   description?: string;
@@ -26,10 +28,8 @@ const { title, description = "A1 Alpha Clean - Professional Cleaning Services in
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   
-  <title>{title}</title>
   
-  <!-- Global Styles -->
-  <link rel="stylesheet" href="/src/styles/global.css">
+  <title>{title}</title>
 </head>
 <body>
   <slot />
